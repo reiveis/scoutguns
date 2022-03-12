@@ -19,8 +19,8 @@ body {
 
 .contentwrap{
     margin-top: 5%;
-    margin-left: 12vw;
-    margin-right: 12vw;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .headermenu{
@@ -31,7 +31,7 @@ body {
     padding: 1.2%;
     background: /*#832232*/#395273;
     color: white;
-    font-size: 180%;
+    font-size: 2vw;
     overflow: hidden;
 }
 
@@ -39,6 +39,10 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.titlehref{
+    padding: 0.5% 1.5%;
 }
 
 .menuhref{
