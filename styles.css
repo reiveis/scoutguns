@@ -1,0 +1,167 @@
+*{margin: 0; padding: 0;}
+
+h1, h2, p, a {
+    font-family: Helvetica, sans-serif;
+}
+
+html, body {
+    height:100%; 
+    min-height:100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(9, 62, 80, 0.3), rgba(9, 62, 80, 0.3)), url('scimg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contentwrap{
+    margin-top: 5%;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.headermenu{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 1.2%;
+    background: /*#832232*/#395273;
+    color: white;
+    font-size: 180%;
+    overflow: hidden;
+}
+
+.headermenu>a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menuhref{
+    padding: 0.5% 1.5%;
+    text-align: right;
+    float: right;
+    background: rgb(57, 82, 115,0);
+    transition: all 1s;
+}
+
+.menuhref:hover{
+    border-radius: 4px;
+    background: rgb(103, 138, 184);
+    animation-name: hoveranim;
+    animation-duration: 1s;
+}
+
+.header_pic {
+    width: 100%;
+}
+
+.page_header{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 2vw;
+    overflow:auto;
+}
+
+.titletext{
+    position: absolute;
+    word-break: break-word;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.titletext:hover{
+    background:rgba(0,0,0,.95);
+}
+
+
+#imgloader{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+#img-ga {
+    display: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#imgloader>div>img{
+    transition: all 0.5s ease-in;
+}
+
+#imgloader>div>#img-ga:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.galmodals{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.galimgmodal {
+    margin: auto;
+    margin-top: 5vw;
+    display: block;
+    height: 80%;
+    max-height: 70vw;
+}
+
+.closeIcon{
+    display: relative;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0.3vw;
+    position: absolute;
+    padding: 0.2vw;
+    background: #F0A500;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.intropar{
+    margin-top: 10%;
+    font-size: 1.5rem;
+    color: #262a2b;
+}
+
+
+footer {
+    height: 40px;
+    width: 100%;
+    padding: 1.2rem 0;
+    background: #395273;
+    text-align: center;
+    display: block;
+    margin-bottom: 15%;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+}
