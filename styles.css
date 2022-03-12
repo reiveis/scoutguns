@@ -145,9 +145,13 @@ body {
 }
 
 .intropar{
+    padding: 1rem;
     margin-top: 10%;
     font-size: 1.5rem;
-    color: #262a2b;
+    color: white;
+    font-weight: 100;
+    font-size: 250%;
+    text-align: center;
 }
 
 
